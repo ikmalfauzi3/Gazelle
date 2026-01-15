@@ -25,10 +25,23 @@
         /* FAQ Hover Animation */
         .faq-card { transition: all 0.3s ease; border: 1px solid #f1f5f9; }
         .faq-card:hover { transform: translateY(-2px); border-color: #3b82f6; box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1); }
+
+        /* Hide Scrollbar for Horizontal Scroll */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
 </head>
 <body class="bg-white overflow-x-hidden"> <!-- Prevent horizontal scroll -->
 
+    <!-- ========================================= -->
+    <!-- SECTION 1: HERO (BANNER UTAMA) -->
+    <!-- Berisi Headline Besar, Sub-headline, dan Tombol CTA Utama -->
+    <!-- ========================================= -->
     <section class="section-space text-center bg-slate-50">
         <div class="max-w-5xl mx-auto px-2">
             <span class="bg-white border border-slate-200 text-slate-500 px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 inline-block shadow-sm">Dipercaya oleh berbagai brand nasional & corporate</span>
@@ -38,11 +51,16 @@
             </h1>
             <p class="text-lg md:text-xl text-slate-600 mb-12 max-w-3xl mx-auto font-medium px-4">Jasa produksi kaos, kemeja, tas, jersey, dan merchandise custom untuk brand, instansi, komunitas, dan event dengan standar profesional.</p>
             <div class="flex flex-col md:flex-row gap-4 justify-center px-6">
-                <a href="https://wa.me/628123456789" class="bg-navy text-white px-8 py-4 md:px-10 md:py-5 rounded-2xl font-bold hover:bg-blue-600 transition shadow-xl text-base md:text-lg inline-block">Konsultasi Gratis Sekarang</a>
+                <!-- UPDATE: Link WhatsApp dengan pesan 'Konsultasi' -->
+                <a href="https://wa.me/6281910022220?text=Halo%20Admin,%20saya%20tertarik%20untuk%20konsultasi%20produksi%20merchandise." class="bg-navy text-white px-8 py-4 md:px-10 md:py-5 rounded-2xl font-bold hover:bg-blue-600 transition shadow-xl text-base md:text-lg inline-block">Konsultasi Gratis Sekarang</a>
             </div>
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- SECTION 2: KEUNGGULAN UTAMA (FEATURES) -->
+    <!-- Grid 4 Kolom menjelaskan kelebihan layanan -->
+    <!-- ========================================= -->
     <section class="py-16 px-6 max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="p-8 bg-blue-50 border border-blue-100 rounded-[2rem] md:rounded-[2.5rem] shadow-sm flex flex-col items-center text-center group hover:bg-white transition duration-300">
@@ -68,6 +86,10 @@
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- SECTION 3: MASALAH (PAIN POINTS) -->
+    <!-- Highlight masalah umum yang sering dialami klien -->
+    <!-- ========================================= -->
     <section class="py-12 px-4 md:px-6">
         <!-- Adjusted padding for mobile: p-6 md:p-16 -->
         <div class="container-800 bg-red-50 border border-red-100 p-6 md:p-16 rounded-custom">
@@ -93,6 +115,10 @@
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- SECTION 4: SOLUSI (VALUE PROPOSITION) -->
+    <!-- Menjelaskan bagaimana perusahaan menyelesaikan masalah di atas -->
+    <!-- ========================================= -->
     <section class="py-12 px-4 md:px-6">
         <!-- Adjusted padding for mobile: p-8 md:p-16 -->
         <div class="container-800 bg-blue-600 p-8 md:p-16 rounded-custom text-white shadow-2xl text-center">
@@ -107,27 +133,76 @@
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- SECTION 5: DAFTAR PRODUK (KATALOG SINGKAT) -->
+    <!-- Menampilkan ikon atau foto produk yang bisa diproduksi -->
+    <!-- ========================================= -->
     <section id="products" class="section-space px-6 bg-white">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12 md:mb-16 uppercase tracking-tight text-slate-900">Produk yang Bisa Dipesan</h2>
             <!-- Adjusted Grid for Mobile -->
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3 md:gap-5 text-center">
+                <!-- KAOS (Sudah ada gambar) -->
                 <div class="bg-white p-3 md:p-5 rounded-[1.5rem] md:rounded-[2rem] border border-slate-100 shadow-sm group">
                     <div class="aspect-square bg-slate-100 rounded-2xl mb-4 overflow-hidden">
-                        <img src="https://raw.githubusercontent.com/ikmalfauzi3/Gazelle/refs/heads/main/aset/id-11134207-81ztj-me0vxmvvs4ch0e.webp" class="w-full h-full object-cover">
+                        <img src="https://raw.githubusercontent.com/ikmalfauzi3/Gazelle/refs/heads/main/aset/Kaos.jpg" class="w-full h-full object-cover">
                     </div>
                     <p class="font-bold text-[10px] md:text-[11px] uppercase tracking-widest">Kaos</p>
                 </div>
-                <div class="bg-slate-50 p-3 md:p-5 rounded-[1.5rem] md:rounded-[2rem] border border-slate-100 shadow-sm"><div class="aspect-square bg-slate-200 rounded-2xl mb-4"></div><p class="font-bold text-[10px] md:text-[11px] uppercase tracking-widest">Polo Shirt</p></div>
-                <div class="bg-slate-50 p-3 md:p-5 rounded-[1.5rem] md:rounded-[2rem] border border-slate-100 shadow-sm"><div class="aspect-square bg-slate-200 rounded-2xl mb-4"></div><p class="font-bold text-[10px] md:text-[11px] uppercase tracking-widest">Kemeja</p></div>
-                <div class="bg-slate-50 p-3 md:p-5 rounded-[1.5rem] md:rounded-[2rem] border border-slate-100 shadow-sm"><div class="aspect-square bg-slate-200 rounded-2xl mb-4"></div><p class="font-bold text-[10px] md:text-[11px] uppercase tracking-widest">Tas</p></div>
-                <div class="bg-slate-50 p-3 md:p-5 rounded-[1.5rem] md:rounded-[2rem] border border-slate-100 shadow-sm"><div class="aspect-square bg-slate-200 rounded-2xl mb-4"></div><p class="font-bold text-[10px] md:text-[11px] uppercase tracking-widest">Totebag</p></div>
-                <div class="bg-slate-50 p-3 md:p-5 rounded-[1.5rem] md:rounded-[2rem] border border-slate-100 shadow-sm"><div class="aspect-square bg-slate-200 rounded-2xl mb-4"></div><p class="font-bold text-[10px] md:text-[11px] uppercase tracking-widest">Jersey</p></div>
-                <div class="bg-blue-600 p-3 md:p-5 rounded-[1.5rem] md:rounded-[2rem] text-white flex flex-col justify-center"><p class="font-extrabold text-[10px] uppercase">Merchandise</p><p class="text-[9px] opacity-70 uppercase font-bold mt-1">Lainnya</p></div>
+                
+                <!-- SANDAL (Updated URL) -->
+                <div class="bg-white p-3 md:p-5 rounded-[1.5rem] md:rounded-[2rem] border border-slate-100 shadow-sm group">
+                    <div class="aspect-square bg-slate-100 rounded-2xl mb-4 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/ikmalfauzi3/Gazelle/refs/heads/main/aset/sandals.jpg" class="w-full h-full object-cover">
+                    </div>
+                    <p class="font-bold text-[10px] md:text-[11px] uppercase tracking-widest">Sandal</p>
+                </div>
+
+                <!-- KEMEJA (Updated URL) -->
+                <div class="bg-white p-3 md:p-5 rounded-[1.5rem] md:rounded-[2rem] border border-slate-100 shadow-sm group">
+                    <div class="aspect-square bg-slate-100 rounded-2xl mb-4 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/ikmalfauzi3/Gazelle/refs/heads/main/aset/Kemeja.jpg" class="w-full h-full object-cover">
+                    </div>
+                    <p class="font-bold text-[10px] md:text-[11px] uppercase tracking-widest">Kemeja</p>
+                </div>
+
+                <!-- TAS (Updated URL) -->
+                <div class="bg-white p-3 md:p-5 rounded-[1.5rem] md:rounded-[2rem] border border-slate-100 shadow-sm group">
+                    <div class="aspect-square bg-slate-100 rounded-2xl mb-4 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/ikmalfauzi3/Gazelle/refs/heads/main/aset/Tas.jpg" class="w-full h-full object-cover">
+                    </div>
+                    <p class="font-bold text-[10px] md:text-[11px] uppercase tracking-widest">Tas</p>
+                </div>
+
+                <!-- TOTEBAG (Updated URL) -->
+                <div class="bg-white p-3 md:p-5 rounded-[1.5rem] md:rounded-[2rem] border border-slate-100 shadow-sm group">
+                    <div class="aspect-square bg-slate-100 rounded-2xl mb-4 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/ikmalfauzi3/Gazelle/refs/heads/main/aset/Totabag.jpg" class="w-full h-full object-cover">
+                    </div>
+                    <p class="font-bold text-[10px] md:text-[11px] uppercase tracking-widest">Totebag</p>
+                </div>
+
+                <!-- RANSEL (Updated URL) -->
+                <div class="bg-white p-3 md:p-5 rounded-[1.5rem] md:rounded-[2rem] border border-slate-100 shadow-sm group">
+                    <div class="aspect-square bg-slate-100 rounded-2xl mb-4 overflow-hidden">
+                        <img src="https://raw.githubusercontent.com/ikmalfauzi3/Gazelle/refs/heads/main/aset/Tas%20Black.jpg" class="w-full h-full object-cover">
+                    </div>
+                    <p class="font-bold text-[10px] md:text-[11px] uppercase tracking-widest">Ransel</p>
+                </div>
+
+                <!-- LAINNYA -->
+                <div class="bg-blue-600 p-3 md:p-5 rounded-[1.5rem] md:rounded-[2rem] text-white flex flex-col justify-center">
+                    <p class="font-extrabold text-[10px] uppercase">Merchandise</p>
+                    <p class="text-[9px] opacity-70 uppercase font-bold mt-1">Lainnya</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- SECTION 6: TARGET AUDIENCE (TARGET PASAR) -->
+    <!-- Siapa saja yang cocok menggunakan layanan ini -->
+    <!-- ========================================= -->
     <section class="section-space px-4 md:px-6">
         <!-- Adjusted padding for mobile -->
         <div class="max-w-7xl mx-auto bg-navy p-8 md:p-20 rounded-custom text-white">
@@ -153,6 +228,10 @@
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- SECTION 7: WHY US (ALASAN MEMILIH KAMI) -->
+    <!-- Tagline kuat tentang identitas perusahaan -->
+    <!-- ========================================= -->
     <section class="section-space px-4 md:px-6 bg-blue-50 text-center">
         <!-- Adjusted padding for mobile -->
         <div class="max-w-7xl mx-auto border border-blue-100 p-8 md:p-20 rounded-custom bg-white">
@@ -162,36 +241,65 @@
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- SECTION 8: CLIENTS (LOGO KLIEN) -->
+    <!-- Daftar logo perusahaan yang sudah bekerja sama -->
+    <!-- ========================================= -->
     <section class="py-16 px-6 bg-white text-center">
         <h2 class="text-2xl md:text-3xl font-extrabold mb-12 md:mb-16 uppercase tracking-tight text-slate-300">Telah Dipercaya Oleh</h2>
         <div class="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-8 md:gap-20 opacity-30 grayscale font-black text-xl md:text-2xl italic">
-            <span>LOGO BRAND</span> <span>LOGO BRAND</span> <span>LOGO BRAND</span> <span>LOGO BRAND</span> <span>LOGO BRAND</span>
+            <span>Urban&Co</span> <span>RDK</span> <span>byrru</span> <span>Ghamess</span> <span>Gazelle</span>
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- SECTION 9: TESTIMONIALS (APA KATA KLIEN) -->
+    <!-- Review positif dari pelanggan sebelumnya -->
+    <!-- ========================================= -->
     <section class="section-space px-4 md:px-6 bg-slate-50">
         <div class="max-w-7xl mx-auto text-center">
             <h2 class="text-3xl md:text-4xl font-extrabold mb-12 md:mb-16 uppercase tracking-tight">Apa Kata Klien Kami?</h2>
-            <div class="grid md:grid-cols-3 gap-6 md:gap-8 text-left text-center group">
-                <div class="bg-white p-8 md:p-10 rounded-[2rem] md:rounded-[3rem] shadow-sm border border-slate-100">
+            
+            <!-- Horizontal Scroll Container untuk Mobile agar tidak panjang ke bawah -->
+            <div class="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto snap-x snap-mandatory pb-6 md:pb-0 hide-scrollbar" style="scrollbar-width: none; -ms-overflow-style: none;">
+                
+                <!-- Card 1 -->
+                <div class="bg-white p-8 md:p-10 rounded-[2rem] md:rounded-[3rem] shadow-sm border border-slate-100 min-w-[85vw] md:min-w-0 snap-center">
                     <i class="fas fa-quote-left text-blue-100 text-3xl mb-6"></i>
                     <p class="italic text-slate-600 mb-8 leading-relaxed">"Produksi rapi, komunikasi sangat jelas, dan hasil sesuai ekspektasi. Sangat merekomendasikan PT Multi Kolaborasi sebagai partner rutin."</p>
                     <p class="font-bold text-blue-600 uppercase tracking-widest text-[10px]">Brand Owner Partnership</p>
                 </div>
-                <div class="bg-white p-8 md:p-10 rounded-[2rem] md:rounded-[3rem] shadow-sm border border-slate-100">
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 md:p-10 rounded-[2rem] md:rounded-[3rem] shadow-sm border border-slate-100 min-w-[85vw] md:min-w-0 snap-center">
                     <i class="fas fa-quote-left text-blue-100 text-3xl mb-6"></i>
                     <p class="italic text-slate-600 mb-8 leading-relaxed">"Tepat waktu dan profesional. Kami sangat terbantu dengan standar QC mereka untuk kebutuhan merchandise event kami."</p>
                     <p class="font-bold text-blue-600 uppercase tracking-widest text-[10px]">Event Organizer Manager</p>
                 </div>
-                <div class="bg-white p-8 md:p-10 rounded-[2rem] md:rounded-[3rem] shadow-sm border border-slate-100">
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 md:p-10 rounded-[2rem] md:rounded-[3rem] shadow-sm border border-slate-100 min-w-[85vw] md:min-w-0 snap-center">
                     <i class="fas fa-quote-left text-blue-100 text-3xl mb-6"></i>
                     <p class="italic text-slate-600 mb-8 leading-relaxed">"Sangat profesional dalam penanganan order corporate. Administrasi rapi dan kualitas produk konsisten di setiap pengiriman."</p>
                     <p class="font-bold text-blue-600 uppercase tracking-widest text-[10px]">Corporate Procurement</p>
                 </div>
+
             </div>
+            
+            <!-- Indikator Scroll (Opsional, untuk UX Mobile) -->
+            <div class="flex justify-center gap-2 mt-4 md:hidden">
+                <div class="w-2 h-2 rounded-full bg-blue-600"></div>
+                <div class="w-2 h-2 rounded-full bg-slate-300"></div>
+                <div class="w-2 h-2 rounded-full bg-slate-300"></div>
+            </div>
+
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- SECTION 10: CAPACITY (KAPASITAS PRODUKSI) -->
+    <!-- Penjelasan tentang kemampuan produksi masal -->
+    <!-- ========================================= -->
     <section class="section-space px-4 md:px-6 bg-white">
         <!-- Adjusted padding for mobile -->
         <div class="max-w-7xl mx-auto bg-slate-50 p-8 md:p-20 rounded-custom border border-slate-100">
@@ -218,6 +326,10 @@
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- SECTION 11: ORDER FLOW (CARA PEMESANAN) -->
+    <!-- Langkah-langkah memesan produk -->
+    <!-- ========================================= -->
     <section class="section-space px-4 md:px-6 bg-white text-center">
         <h2 class="text-3xl md:text-4xl font-extrabold mb-12 md:mb-16 uppercase tracking-tight text-slate-900">Cara Pemesanan</h2>
         <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3 md:gap-4">
@@ -231,16 +343,25 @@
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- SECTION 12: ESTIMASI HARGA -->
+    <!-- Disclaimer harga dan tombol kontak sales -->
+    <!-- ========================================= -->
     <section class="py-10 px-4 md:px-6">
         <!-- Adjusted padding for mobile: p-8 md:p-16 -->
         <div class="container-800 bg-navy p-8 md:p-16 rounded-custom text-white text-center shadow-2xl">
             <h2 class="text-2xl md:text-3xl font-bold mb-6 uppercase tracking-tight">Estimasi Harga</h2>
             <p class="text-slate-400 text-sm mb-10">Harga produksi menyesuaikan jumlah, jenis bahan, desain, dan teknik produksi brand Anda.</p>
             <!-- Fixed Button: Added inline-block, max-w-full, whitespace-normal to handle long text on mobile -->
-            <a href="https://wa.me/628123456789" class="bg-blue-600 px-8 py-4 md:px-10 md:py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg text-sm md:text-lg uppercase tracking-widest inline-block max-w-full whitespace-normal leading-tight">Hubungi Tim Sales</a>
+            <!-- UPDATE: Link WhatsApp dengan pesan 'Tanya Harga' -->
+            <a href="https://wa.me/6281910022220?text=Halo%20Admin,%20saya%20ingin%20tanya%20estimasi%20harga%20produksi." class="bg-blue-600 px-8 py-4 md:px-10 md:py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg text-sm md:text-lg uppercase tracking-widest inline-block max-w-full whitespace-normal leading-tight">Hubungi Tim Sales</a>
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- SECTION 13: FAQ (PERTANYAAN UMUM) -->
+    <!-- Jawaban untuk pertanyaan yang sering diajukan -->
+    <!-- ========================================= -->
     <section class="section-space px-4 md:px-6 bg-white">
         <div class="container-800">
             <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12 md:mb-16 uppercase tracking-tight">FAQ</h2>
@@ -264,15 +385,24 @@
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- SECTION 14: CTA FINAL (AJAKAN BERTINDAK) -->
+    <!-- Tombol WhatsApp besar di akhir halaman -->
+    <!-- ========================================= -->
     <section class="section-space px-4 md:px-6">
         <!-- Adjusted padding for mobile -->
         <div class="max-w-5xl mx-auto bg-blue-600 p-8 md:p-24 rounded-custom text-white text-center shadow-2xl relative overflow-hidden">
             <h2 class="text-3xl md:text-6xl font-extrabold mb-8 tracking-tight">Siap Produksi Merchandise <br>& Produk Custom?</h2>
             <p class="text-blue-100 mb-12 text-lg md:text-xl font-medium max-w-2xl mx-auto">Diskusikan kebutuhan brand, instansi, atau event Anda bersama tim kami.</p>
-            <a href="https://wa.me/628123456789" class="bg-white text-blue-600 px-8 py-5 md:px-12 md:py-6 rounded-2xl font-bold text-lg md:text-xl hover:bg-slate-50 transition shadow-lg inline-block uppercase tracking-widest max-w-full">Konsultasi via WhatsApp</a>
+            <!-- UPDATE: Link WhatsApp dengan pesan 'Diskusi Project' -->
+            <a href="https://wa.me/6281910022220?text=Halo%20Admin,%20saya%20siap%20diskusi%20kebutuhan%20project%20custom%20saya." class="bg-white text-blue-600 px-8 py-5 md:px-12 md:py-6 rounded-2xl font-bold text-lg md:text-xl hover:bg-slate-50 transition shadow-lg inline-block uppercase tracking-widest max-w-full">Konsultasi via WhatsApp</a>
         </div>
     </section>
 
+    <!-- ========================================= -->
+    <!-- FOOTER -->
+    <!-- Copyright dan Info Singkat -->
+    <!-- ========================================= -->
     <footer class="py-12 text-center text-[10px] text-slate-400 uppercase tracking-[0.5em] font-bold italic px-4">
         PT Multi Kolaborasi &copy; 2026. Professional Production Standard.
     </footer>
